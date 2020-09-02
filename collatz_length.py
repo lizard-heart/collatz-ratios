@@ -1,16 +1,14 @@
 import math
 import csv
 
-# variables
-last_to_check = 1000000
+# variables, change last_to_check to check more or less numbers
+last_to_check = 100000000
 numbers_checked = []
 ratios = []
 list_of_lengths = []
 lowest_ratios = []
 
 # does process described in the video
-
-
 def collatz(input):
     length = 0
     number = input
@@ -46,5 +44,5 @@ for i in ratios:
     if i < current_lowest_ratio:
         current_lowest_ratio = i
         lowest_ratios.append(numbers_checked[ratios.index(i)])
-
 print(lowest_ratios)
+
